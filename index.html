@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Список дел</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="gen-container">
+		<div id="cent-container">
+			<div id="left-column">
+				<div id="head-text">Список дел:</div>
+				<div id="small">Список пуст...</div>
+			</div>
+
+			<div id="right-column">
+				<div class="head-text">Добавить новое дело</div>
+					<form id="form" name="form"></form>
+					<div id="task-conteiner">
+						<div id="task-name">
+							<label class="input-desc" for="task-input">
+								* Название
+							</label>
+							<input type="text" id="task-input" placeholder="Назовите свое дело" required="required" autocomplete="off" form="form" name="name-task">
+						</div>
+						
+						<div id="textarea-div">
+							<label class="input-desc" for="task-descr">
+								* Описание
+							</label>
+							<textarea id="task-descr" placeholder="Подробнее о деле" required="required" autocomplete="off" form="form" name="Description"></textarea>
+							<!-- <input name="" id="task-descr" placeholder="Подробнее о деле" value="По цене" required="required"> -->
+
+						<button id="task-button">Добавить дело</button>
+						</div>
+					</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
