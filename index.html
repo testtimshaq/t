@@ -1,46 +1,63 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="height: 100%;" class="bg-light">
 <head>
 	<meta charset="utf-8">
 	<title>Список дел</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 </head>
 <body>
-	<div id="gen-container">
-		<div id="cent-container">
-			<div id="left-column">
-				<div id="head-text">Список дел:</div>
-				<div id="small">Список пуст...</div>
-			</div>
+	<div class="container-fluid">
+		<div class="row justify-content-around bg-light">
+			<div class="col-lg-3 mt-5">
+						<h5 class="ml-4">Добавить новое дело</h5>
+				
 
-			<div id="right-column">
-				<div class="head-text">Добавить новое дело</div>
 					<form id="form" name="form"></form>
-					<div id="task-conteiner">
-						<div id="task-name">
+					<div id="task-conteiner" class="bg-white p-4 mt-4">
+						<div id="task-name" class="form-group">
 							<label class="input-desc" for="task-input">
-								* Название
+								<small>* Название</small>
 							</label>
-							<input type="text" id="task-input" placeholder="Назовите свое дело" required="required" autocomplete="off" form="form" name="name-task">
+							<input class="form-control" type="text" id="task-input" placeholder="Назовите свое дело" required="required" autocomplete="off" form="form" name="name-task">
 						</div>
 						
 						<div id="textarea-div">
 							<label class="input-desc" for="task-descr">
-								* Описание
+								<small>* Описание</small>
 							</label>
-							<textarea id="task-descr" placeholder="Подробнее о деле" required="required" autocomplete="off" form="form" name="Description"></textarea>
+							<textarea class="form-control" rows="3" id="task-descr" placeholder="Подробнее о деле" required="required" autocomplete="off" form="form" name="Description"></textarea>
 							<!-- <input name="" id="task-descr" placeholder="Подробнее о деле" value="По цене" required="required"> -->
 
-						<button id="task-button">Добавить дело</button>
+						<button id="task-button" class="btn btn-primary mt-3">Добавить дело</button>
 						</div>
 					</div>
 			</div>
-			
-		</div>
 		
-	</div>
 
+			
+			<div class="col-lg-3 mt-5" id="left-column">
+				<h5>Список дел:</h5>
+				<div id="small">
+					<small>Список пуст...</small>
+				</div>
+
+	<!-- <div class="container-lg-3 bg-white new-task-cont"><img class="arrow" src="img/arrow.png">
+		<div class="newTask1 border-bottom">
+			<p>text<img class="remove-task" src="img/remove-task.png"></p>
+		</div>
+		<div class="newTask2">
+			text
+		</div>
+	</div> -->
+
+	<!-- <div class="container-lg-3 bg-white new-task-cont"><img class="arrow" src="img/arrow.png"><div class="newTask1 border-bottom"><p><img class="remove-task" src="img/remove-task.png"></p></div><div class="newTask2"></div></div> -->
+			</div>
+	</div>
+	</div>
 </body>
 </html>

@@ -16,7 +16,7 @@ $(function(){
 
 	console.log(newTask1,newTask2);
 	
-	var div = '<div class="new-task-cont"><img class="arrow" src="img/arrow.png"><div class="newTask1"><p><img class="remove-task" src="img/remove-task.png"></p></div><div class="newTask2"></div></div>';
+	var div = '<div class="container-lg-3 bg-white position-relative new-task-cont"><img class="arrow" src="img/arrow.png"><div class="newTask1 border-bottom mt-4"><p><img class="remove-task ml-2" src="img/remove-task.png"></p></div><div class="newTask2"></div></div>';
 
 		$('#task-button')
 		.click(function(){
